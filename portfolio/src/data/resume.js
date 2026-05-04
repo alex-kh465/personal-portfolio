@@ -102,6 +102,7 @@ export const projects = [
     icon: '🎓',
     github: '#',
     live: '#',
+    badge: 'Patent Pending',
   },
   {
     id: 4,
@@ -122,6 +123,9 @@ export const research = [
     description: 'Comprehensive study evaluating ViT model resilience against adversarial attack vectors and proposing hybrid defense strategies.',
     tags: ['Vision Transformers', 'Adversarial ML', 'Defense Mechanisms'],
     color: '#4F8EF7',
+    publisher: 'CRC Press',
+    publisherIcon: 'CRC',
+    url: null,
   },
   {
     id: 2,
@@ -129,6 +133,9 @@ export const research = [
     description: 'Analysis of adversarial vulnerabilities in classical machine learning models and evaluation of contemporary defense strategies.',
     tags: ['Adversarial Attacks', 'ML Security', 'Defense'],
     color: '#7C3AED',
+    publisher: 'Springer Nature',
+    publisherIcon: 'SN',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-032-10016-0_20',
   },
   {
     id: 3,
@@ -136,6 +143,9 @@ export const research = [
     description: 'Research into how feedback-loop training mechanisms influence long-term model accuracy and stability in temporal forecasting tasks.',
     tags: ['Time Series', 'Feedback Learning', 'Model Performance'],
     color: '#22D3EE',
+    publisher: 'IEEE Xplore',
+    publisherIcon: 'IEEE',
+    url: 'https://ieeexplore.ieee.org/document/10581164',
   },
   {
     id: 4,
@@ -143,6 +153,9 @@ export const research = [
     description: 'ML-driven macroeconomic study analyzing COVID-19\'s causal influence on inflation patterns using regression and time-series models.',
     tags: ['Economics', 'Time Series', 'ML', 'Policy Analysis'],
     color: '#C9A84C',
+    publisher: 'IEEE Xplore',
+    publisherIcon: 'IEEE',
+    url: 'https://ieeexplore.ieee.org/document/10690053',
   },
 ];
 
