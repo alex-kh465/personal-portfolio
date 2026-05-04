@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% OFFICIAL TEMPLATE FOR DEPARTMENT OF COMPUTER SCIENCE, CHRIST UNIVERSITY (2024-2025).
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\input{glyphtounicode}
+
+\definecolor{bannerblue}{RGB}{24,70,106}
+\definecolor{goldline}{RGB}{196,160,72}
+\definecolor{bannerwhite}{RGB}{255,255,255}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------BANNER----------
+\begin{tikzpicture}[remember picture,overlay]
+    \fill[bannerwhite] (current page.north west) rectangle ([yshift=-3cm]current page.north east);
+    \node[anchor=north east, inner sep=0pt] at ([xshift=-10pt, yshift=-10pt]current page.north east) 
+        % {\includegraphics[width=3cm]{christ-uni-logo.png}};
+\end{tikzpicture}
+
+%----------HEADER----------
+\begin{textblock*}{\textwidth}(37pt, 0.5cm)
+\begin{center}
+    \color{black}\textbf{\Huge \scshape Alex Khundongbam} \\ \vspace{8pt}
+    \small 
+    \href{tel:+916009285151}{\underline{\color{black}+916009285151}} $|$ 
+    \href{mailto:alexkhundongbam260@gmail.com}{\underline{\color{black}alexkhundongbam260@gmail.com}} $|$  
+    \href{https://www.linkedin.com/in/alex-khundongbam-975678223/}{\underline{\color{black}linkedin.com/in/alexkh}} $|$
+    \href{https://github.com/alex-kh465}{\underline{\color{black}github.com/alex-kh465}} $|$
+    \href{https://alexkhundongbam.framer.ai}{\underline{\color{black}alexkhundongbam.framer.ai}}
+\end{center}
+\end{textblock*}
+
+\vspace{1.5cm}
+
+%-----------PROFILE-----------
+\section{Profile}
+\resumeSubHeadingListStart
+\resumeItem{AI Engineer specializing in autonomous agent systems, RAG pipelines, and production LLM applications. Experienced in designing and deploying multi-agent architectures using LangChain, LangGraph, and CrewAI, with hands-on expertise in async Python, FastAPI microservices, and workflow orchestration. Skilled in hallucination mitigation, agent evaluation frameworks, and translating complex AI capabilities into reliable, enterprise-grade automation systems.}
+\resumeSubHeadingListEnd
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{AI Analyst / AI Engineer}{Jan 2026 – Present}
+{LeadWalnut}{Bangalore}
+\resumeItemListStart
+
+\resumeItem{Designed and deployed autonomous document processing agents using event-driven triggers and API-driven workflow orchestration (n8n), handling 100+ invoice documents/day with end-to-end validation and error recovery.}
+
+\resumeItem{Architected multi-stage AI pipelines with structured output parsing, JSON extraction, and schema validation layers — reducing hallucinations and extraction errors by enforcing strict output contracts without relying on unguarded LLM responses.}
+
+\resumeItem{Built async FastAPI microservices for scalable document ingestion, agent task routing, and accounting system integration, ensuring non-blocking throughput under concurrent document loads.}
+
+\resumeItem{Implemented agent monitoring and observability systems including structured logging, workflow state tracking, and failure alerting to ensure production reliability of automation agents.}
+
+\resumeItem{Developed Python-based AI and analytics tools analyzing 50k+ SEO and CRM records to support keyword intelligence, competitor analysis, and marketing performance optimization.}
+
+\resumeItem{Defined and enforced Non-Functional Requirements (NFRs) — data validation, error handling, logging, and retry logic — to ensure production readiness of all automation workflows.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{AI Engineering Intern – ERP Systems}{Jul 2025 – Dec 2025}
+{Christ University, Centre for Digital Innovation, Bangalore}{}
+\resumeItemListStart
+  \resumeItem{Designed and deployed async FastAPI-based AI microservices for document processing, form automation, and internal reporting workflows integrated with the university ERP system.}
+  \resumeItem{Implemented agent safety guardrails and output validation layers to ensure reliable and consistent responses from LLM-powered features in production.}
+  \resumeItem{Improved system observability through structured logging and monitoring dashboards, enabling rapid identification of agent failures and performance bottlenecks.}
+\resumeItemListEnd
+
+\resumeSubheading
+{AI/ML R\&D Intern}{Nov 2024 – May 2025}
+{Christ University, Bangalore}{}
+\resumeItemListStart
+  \resumeItem{Developed and orchestrated autonomous AI agents using LangChain, LangGraph, and n8n — integrating tool use, vector store retrieval, and document loaders to build functional multi-agent pipelines.}
+  \resumeItem{Built and evaluated RAG systems using Pinecone and Chroma vector databases, applying chunking strategies and embedding optimization to improve retrieval precision and reduce irrelevant context injection.}
+  \resumeItem{Applied Chain-of-Thought (CoT) prompting and PEFT fine-tuning for performance optimization of transformer models, including hallucination reduction through structured prompt constraints.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Data Science Intern}{Nov 2023 – Feb 2024}
+{Solar Secure Solutions}{Remote, Bengaluru, India}
+\resumeItemListStart
+  \resumeItem{Processed and cleaned 500k+ data points to improve data quality and enhance downstream model performance and reliability.}
+  \resumeItem{Developed a churn prediction model achieving 95\% accuracy, enabling proactive customer retention strategies.}
+  \resumeItem{Built a recommendation system that increased user engagement by 20\% through personalized content and behavioral analysis.}
+  \resumeItem{Designed a time-series forecasting model to support demand planning and improve operational decision-making.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+\small{
+\textbf{LLM \& Agentic AI:} LangChain, LangGraph, CrewAI, AutoGen, RAG, PEFT, Prompt Engineering, Hallucination Mitigation \\
+\textbf{Agent Evaluation \& Safety:} Output Validation, Guardrails, RAGAS-style Evaluation, Structured Output Contracts \\
+\textbf{Vector Databases:} Pinecone, Chroma, Weaviate \\
+\textbf{Languages:} Python (asyncio, async/await), SQL, C, Java, JavaScript \\
+\textbf{MLOps \& Deployment:} FastAPI, Flask, Docker, Weights \& Biases, AWS, GCP, Vercel \\
+\textbf{Data \& Analytics:} Pandas, NumPy, Spark, Scikit-Learn, PyTorch, TensorFlow, XGBoost \\
+\textbf{Automation \& Orchestration:} n8n, Event-driven Workflows, Email Triggers, CI/CD Pipelines \\
+\textbf{System Design:} Scalable Architectures, Microservices, API Design, Data Validation Pipelines, System Observability
+}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeItem{\textbf{Multi-Agent Workout Planner:} Designed a multi-agent AI system using LangChain and tool-based agents with structured reasoning pipelines. Implemented output evaluation logic to validate plan coherence and flag hallucinated or unsafe recommendations before delivery to users.}
+\resumeItem{\textbf{SpeakFiction:} Built a RAG-based conversational AI system enabling users to interact with fictional characters from uploaded books. Implemented chunking, embedding optimization, and context injection strategies to minimize hallucinations and improve retrieval faithfulness.}
+\resumeItem{\textbf{Christ IntelliTeach:} Built and deployed a data-driven web platform for educators with automated LLM-powered content generation, structured document processing, and usage analytics. Integrated async API services for concurrent multi-user support.}
+\resumeItem{\textbf{LLM Distillation:} Applied quantization and PEFT fine-tuning for optimized transformer inference on limited hardware, with structured output validation to maintain response quality post-compression.}
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Research}
+\resumeSubHeadingListStart
+  \resumeItem{Systematic Evaluation of Vision Transformer Robustness under Gradient, Optimization, and Black-Box Attacks with Hybrid Defense Mechanisms}
+  \resumeItem{Classic Models, Modern Threats: A Study on Adversarial Attack and Defense for Traditional ML Models}
+  \resumeItem{Investigating the Impact of Feedback Loop Training on Machine Learning Model Performance in Time Series Data}
+  \resumeItem{Assessing the Impact of COVID-19 on Inflation Dynamics in India: A Machine Learning Approach}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Christ University, Central Campus}{Bangalore}
+    {M.Sc. in Artificial Intelligence and Machine Learning}{2024 – Present}
+  \resumeSubheading
+    {Kristu Jayanti College}{Bangalore}
+    {B.Sc. in Physics and Computer Science – 8.45 CGPA | First Rank Holder}{2021 – 2024}
+\resumeSubHeadingListEnd
+
+\end{document}
