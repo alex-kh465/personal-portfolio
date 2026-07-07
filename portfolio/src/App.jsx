@@ -2,6 +2,7 @@ import Navbar from './components/layout/Navbar';
 import HeroSection from './components/sections/HeroSection';
 import AboutSection from './components/sections/AboutSection';
 import ExperienceSection from './components/sections/ExperienceSection';
+import FeatureVisual from './components/sections/FeatureVisual';
 import ProjectsSection from './components/sections/ProjectsSection';
 import ResearchSection from './components/sections/ResearchSection';
 import SkillsSection from './components/sections/SkillsSection';
@@ -33,6 +34,7 @@ export default function App() {
           <HeroSection />
           <AboutSection />
           <ExperienceSection />
+          <FeatureVisual />
           <ProjectsSection />
           <ResearchSection />
           <SkillsSection />

@@ -79,8 +79,22 @@ export default function HeroSection() {
 
       </div>
 
-      {/* Super subtle background gradient */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gray-50 rounded-full blur-[120px] -z-10 opacity-70" />
+      {/* Background image: visible at the edges, faded to white behind the text for legibility */}
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
+        <img
+          src="/hero-bg.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-60"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(60% 55% at 50% 45%, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0.35) 75%, rgba(255,255,255,0) 100%)',
+          }}
+        />
+        <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-white" />
+      </div>
     </section>
   );
 }
