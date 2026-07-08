@@ -52,7 +52,7 @@ export default function ExperienceSection() {
           </motion.h2>
         </div>
 
-        <div className="grid gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {experience.map((role, index) => (
             <ExperienceCard key={role.id} role={role} index={index} />
           ))}

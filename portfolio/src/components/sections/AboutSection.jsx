@@ -36,7 +36,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <motion.div
             variants={fadeUp}
             className="bento-card md:col-span-2"
@@ -45,18 +45,16 @@ export default function AboutSection() {
             <p className="text-gray-600 leading-relaxed mb-10 text-lg">
               {personal.about}
             </p>
-            <div className="flex gap-8">
-              <div className="flex flex-col">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8">
+              <div className="flex flex-col min-w-0">
                 <span className="text-3xl font-medium text-gray-900 mb-1">8.45</span>
                 <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">CGPA (Rank 1)</span>
               </div>
-              <div className="w-px bg-gray-200"></div>
-              <div className="flex flex-col">
+              <div className="flex flex-col min-w-0 border-l border-gray-200 pl-4 sm:pl-8">
                 <span className="text-3xl font-medium text-gray-900 mb-1">5+</span>
                 <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Industrial Products Deployed</span>
               </div>
-              <div className="w-px bg-gray-200"></div>
-              <div className="flex flex-col">
+              <div className="flex flex-col min-w-0 border-l border-gray-200 pl-4 sm:pl-8">
                 <span className="text-3xl font-medium text-gray-900 mb-1">2024</span>
                 <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Since</span>
               </div>
