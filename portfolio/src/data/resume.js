@@ -21,18 +21,18 @@ export const heroStats = [
 export const experience = [
   {
     id: 1,
-    role: 'AI Analyst / AI Engineer',
+    role: 'AI and Data Engineer',
     company: 'LeadWalnut',
     location: 'Bangalore',
     period: 'Jan 2026 – Present',
     type: 'Full-time',
     color: '#4F8EF7',
     achievements: [
-      'Designed and deployed autonomous document processing agents using event-driven triggers and API-driven workflow orchestration (n8n), handling 100+ invoice documents/day with end-to-end validation and error recovery.',
-      'Architected multi-stage AI pipelines with structured output parsing, JSON extraction, and schema validation layers — reducing hallucinations and extraction errors by enforcing strict output contracts.',
-      'Built async FastAPI microservices for scalable document ingestion, agent task routing, and accounting system integration, ensuring non-blocking throughput under concurrent document loads.',
-      'Implemented agent monitoring and observability systems including structured logging, workflow state tracking, and failure alerting to ensure production reliability.',
-      'Developed Python-based AI and analytics tools analyzing 50k+ SEO and CRM records to support keyword intelligence, competitor analysis, and marketing performance optimization.',
+      'Built autonomous document-processing agents handling 100+ invoices/day with automated validation.',
+      'Designed AI pipelines with structured output validation to cut hallucinations and extraction errors.',
+      'Built async FastAPI microservices for document ingestion and accounting system integration.',
+      'Built AI analytics tools processing 50k+ SEO/CRM records for marketing insights.',
+      'Owned production NFRs — security, observability, reliability, and cost — across deployed systems.',
     ],
   },
   {
@@ -44,9 +44,9 @@ export const experience = [
     type: 'Internship',
     color: '#7C3AED',
     achievements: [
-      'Designed and deployed async FastAPI-based AI microservices for document processing, form automation, and internal reporting workflows integrated with the university ERP system.',
-      'Implemented agent safety guardrails and output validation layers to ensure reliable and consistent responses from LLM-powered features in production.',
-      'Improved system observability through structured logging and monitoring dashboards, enabling rapid identification of agent failures and performance bottlenecks.',
+      'Built FastAPI microservices automating document processing and forms for the university ERP system.',
+      'Added safety guardrails and validation to keep LLM features reliable in production.',
+      'Built monitoring dashboards for faster detection of agent failures.',
     ],
   },
   {
@@ -58,9 +58,9 @@ export const experience = [
     type: 'Internship',
     color: '#22D3EE',
     achievements: [
-      'Developed and orchestrated autonomous AI agents using LangChain, LangGraph, and n8n — integrating tool use, vector store retrieval, and document loaders to build functional multi-agent pipelines.',
-      'Built and evaluated RAG systems using Pinecone and Chroma vector databases, applying chunking strategies and embedding optimization to improve retrieval precision.',
-      'Applied Chain-of-Thought (CoT) prompting and PEFT fine-tuning for performance optimization of transformer models, including hallucination reduction through structured prompt constraints.',
+      'Built multi-agent AI pipelines with LangChain, LangGraph, and n8n.',
+      'Built RAG systems with Pinecone and Chroma, improving retrieval accuracy.',
+      'Fine-tuned transformer models (PEFT) and reduced hallucinations via prompt engineering.',
     ],
   },
   {
@@ -72,10 +72,10 @@ export const experience = [
     type: 'Internship',
     color: '#C9A84C',
     achievements: [
-      'Processed and cleaned 500k+ data points to improve data quality and enhance downstream model performance and reliability.',
-      'Developed a churn prediction model achieving 95% accuracy, enabling proactive customer retention strategies.',
-      'Built a recommendation system that increased user engagement by 20% through personalized content and behavioral analysis.',
-      'Designed a time-series forecasting model to support demand planning and improve operational decision-making.',
+      'Cleaned and processed 500k+ data points to improve model reliability.',
+      'Built a churn prediction model with 95% accuracy.',
+      'Built a recommendation system that boosted engagement by 20%.',
+      'Built a time-series model to support demand planning.',
     ],
   },
 ];
@@ -84,7 +84,7 @@ export const projects = [
   {
     id: 1,
     title: 'EverMind LongContext Agent',
-    description: 'A production-grade conversational agent that solves LLM context-window limits with a hybrid memory system combining SQLite metadata storage, ChromaDB vector search, and keyword matching. Uses adaptive GPT-4o-mini summarization to compress older context at a 3:1+ ratio while retaining 96% Q&A accuracy across long, multi-turn sessions, and runs retrieval and tool execution (calculator, web search, Wikipedia) in parallel to keep response latency under 1.5s.',
+    description: 'Conversational agent with hybrid memory (SQLite + ChromaDB) that compresses long context 3:1 while keeping 96% Q&A accuracy and sub-1.5s response latency.',
     tags: ['FastAPI', 'Python', 'React/TypeScript', 'ChromaDB', 'RAG', 'OpenAI Embeddings', 'Async/Parallel Processing'],
     color: '#4F8EF7',
     icon: '🧠',
@@ -95,7 +95,7 @@ export const projects = [
   {
     id: 2,
     title: 'SpeakFiction',
-    description: 'RAG-based conversational AI enabling users to interact with fictional characters from uploaded books. Implements chunking, embedding optimization, and context injection strategies to minimize hallucinations and improve retrieval faithfulness.',
+    description: 'RAG-powered chat with fictional characters from any uploaded book, tuned to minimize hallucinations.',
     tags: ['RAG', 'LangChain', 'Pinecone', 'FastAPI', 'NLP'],
     color: '#7C3AED',
     icon: '📚',
@@ -106,7 +106,7 @@ export const projects = [
   {
     id: 3,
     title: 'Christ IntelliTeach',
-    description: 'Data-driven web platform for educators with automated LLM-powered content generation, structured document processing, and usage analytics. Supports concurrent multi-user access via async API services.',
+    description: 'AI platform for educators to auto-generate lesson content and materials, with built-in usage analytics.',
     tags: ['FastAPI', 'LLM', 'Async Python', 'Analytics', 'Education'],
     color: '#22D3EE',
     icon: '🎓',
@@ -132,7 +132,7 @@ export const research = [
   {
     id: 1,
     title: 'Systematic Evaluation of Vision Transformer Robustness under Gradient, Optimization, and Black-Box Attacks with Hybrid Defense Mechanisms',
-    description: 'Comprehensive study evaluating ViT model resilience against adversarial attack vectors and proposing hybrid defense strategies.',
+    description: 'Evaluates ViT robustness against adversarial attacks and proposes hybrid defenses.',
     tags: ['Vision Transformers', 'Adversarial ML', 'Defense Mechanisms'],
     color: '#4F8EF7',
     publisher: 'CRC Press',
@@ -142,7 +142,7 @@ export const research = [
   {
     id: 2,
     title: 'Classic Models, Modern Threats: A Study on Adversarial Attack and Defense for Traditional ML Models',
-    description: 'Analysis of adversarial vulnerabilities in classical machine learning models and evaluation of contemporary defense strategies.',
+    description: 'Analyzes adversarial vulnerabilities in classical ML models and evaluates modern defenses.',
     tags: ['Adversarial Attacks', 'ML Security', 'Defense'],
     color: '#7C3AED',
     publisher: 'Springer Nature',
@@ -152,7 +152,7 @@ export const research = [
   {
     id: 3,
     title: 'Investigating the Impact of Feedback Loop Training on Machine Learning Model Performance in Time Series Data',
-    description: 'Research into how feedback-loop training mechanisms influence long-term model accuracy and stability in temporal forecasting tasks.',
+    description: 'Studies how feedback-loop training affects long-term accuracy and stability in time-series forecasting.',
     tags: ['Time Series', 'Feedback Learning', 'Model Performance'],
     color: '#22D3EE',
     publisher: 'IEEE Xplore',
@@ -162,7 +162,7 @@ export const research = [
   {
     id: 4,
     title: 'Assessing the Impact of COVID-19 on Inflation Dynamics in India: A Machine Learning Approach',
-    description: 'ML-driven macroeconomic study analyzing COVID-19\'s causal influence on inflation patterns using regression and time-series models.',
+    description: 'ML study on COVID-19\'s causal impact on inflation in India using regression and time-series models.',
     tags: ['Economics', 'Time Series', 'ML', 'Policy Analysis'],
     color: '#C9A84C',
     publisher: 'IEEE Xplore',
