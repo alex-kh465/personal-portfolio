@@ -15,6 +15,17 @@ function ProjectCard({ project }) {
           )}
         </div>
 
+        {project.demo && (
+          <div className="rounded-2xl overflow-hidden mb-6 border border-gray-200">
+            <img
+              src={project.demo}
+              alt={`${project.title} demo`}
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
+        )}
+
         <h3 className="text-2xl font-medium text-gray-900 mb-4">{project.title}</h3>
         <p className="text-gray-500 leading-relaxed mb-8">{project.description}</p>
 
