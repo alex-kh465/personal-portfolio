@@ -87,7 +87,7 @@
     \href{mailto:alexkhundongbam260@gmail.com}{\underline{\color{black}alexkhundongbam260@gmail.com}} $|$  
     \href{https://www.linkedin.com/in/alex-khundongbam-975678223/}{\underline{\color{black}linkedin.com/in/alexkh}} $|$
     \href{https://github.com/alex-kh465}{\underline{\color{black}github.com/alex-kh465}} $|$
-    \href{https://alexkhundongbam.framer.ai}{\underline{\color{black}alexkhundongbam.framer.ai}}
+    \href{https://portfolio.alexkh.site}{\underline{\color{black}portfolio.alexkh.site}}
 \end{center}
 \end{textblock*}
 
@@ -105,7 +105,7 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{AI Analyst / AI Engineer}{Jan 2026 – Present}
+{AI and Data Engineer}{Jan 2026 – Present}
 {LeadWalnut}{Bangalore}
 \resumeItemListStart
 
@@ -157,23 +157,21 @@
 %-----------SKILLS-----------
 \section{Skills}
 \small{
-\textbf{LLM \& Agentic AI:} LangChain, LangGraph, CrewAI, AutoGen, RAG, PEFT, Prompt Engineering, Hallucination Mitigation \\
-\textbf{Agent Evaluation \& Safety:} Output Validation, Guardrails, RAGAS-style Evaluation, Structured Output Contracts \\
-\textbf{Vector Databases:} Pinecone, Chroma, Weaviate \\
-\textbf{Languages:} Python (asyncio, async/await), SQL, C, Java, JavaScript \\
-\textbf{MLOps \& Deployment:} FastAPI, Flask, Docker, Weights \& Biases, AWS, GCP, Vercel \\
+\textbf{LLM \& Agentic AI:} LangChain, LangGraph, CrewAI, AutoGen, RAG, PEFT, Prompt Engineering, Hallucination Mitigation, CoT Prompting \\
+\textbf{Agent Evaluation \& Safety:} Output Validation, Guardrails, RAGAS Evaluation, Structured Output Contracts, Agent Monitoring \\
+\textbf{MLOps \& Deployment:} FastAPI, Flask, Docker, Weights \& Biases, AWS, GCP, Vercel, CI/CD Pipelines \\
 \textbf{Data \& Analytics:} Pandas, NumPy, Spark, Scikit-Learn, PyTorch, TensorFlow, XGBoost \\
-\textbf{Automation \& Orchestration:} n8n, Event-driven Workflows, Email Triggers, CI/CD Pipelines \\
-\textbf{System Design:} Scalable Architectures, Microservices, API Design, Data Validation Pipelines, System Observability
+\textbf{Vector Databases:} Pinecone, Chroma, Weaviate \\
+\textbf{Languages \& Systems:} Python (asyncio), SQL, JavaScript, Java, C, Microservices, API Design, Event-driven Architecture
 }
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeItem{\textbf{Multi-Agent Workout Planner:} Designed a multi-agent AI system using LangChain and tool-based agents with structured reasoning pipelines. Implemented output evaluation logic to validate plan coherence and flag hallucinated or unsafe recommendations before delivery to users.}
+\resumeItem{\textbf{EverMind LongContext Agent:} Built a conversational agent with hybrid memory (SQLite + ChromaDB) that compresses long context 3:1 while keeping 96\% Q\&A accuracy and sub-1.5s response latency, using async/parallel processing and OpenAI embeddings.}
 \resumeItem{\textbf{SpeakFiction:} Built a RAG-based conversational AI system enabling users to interact with fictional characters from uploaded books. Implemented chunking, embedding optimization, and context injection strategies to minimize hallucinations and improve retrieval faithfulness.}
 \resumeItem{\textbf{Christ IntelliTeach:} Built and deployed a data-driven web platform for educators with automated LLM-powered content generation, structured document processing, and usage analytics. Integrated async API services for concurrent multi-user support.}
-\resumeItem{\textbf{LLM Distillation:} Applied quantization and PEFT fine-tuning for optimized transformer inference on limited hardware, with structured output validation to maintain response quality post-compression.}
+\resumeItem{\textbf{CompressLM — LLM Compression \& Distillation Pipeline:} Compressed a 3B-parameter instruct LLM into a 0.5B student via LoRA + KL-divergence distillation, then INT4-quantized it — 19x smaller and 7.5x faster inference, retaining 93\% teacher-level accuracy and 97\% JSON-schema validity.}
 \resumeSubHeadingListEnd
 
 %-----------RESEARCH-----------

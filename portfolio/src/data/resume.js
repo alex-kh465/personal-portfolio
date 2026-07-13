@@ -6,7 +6,8 @@ export const personal = {
   phone: '+916009285151',
   linkedin: 'https://www.linkedin.com/in/alex-khundongbam-975678223/',
   github: 'https://github.com/alex-kh465',
-  website: 'https://alexkhundongbam.framer.ai',
+  website: 'https://portfolio.alexkh.site',
+  resumeUrl: '/Alex-Khundongbam-Resume.pdf',
   profile: `AI Engineer specializing in autonomous agent systems, RAG pipelines, and production LLM applications. Experienced in designing and deploying multi-agent architectures using LangChain, LangGraph, and CrewAI, with hands-on expertise in async Python, FastAPI microservices, and workflow orchestration. Skilled in hallucination mitigation, agent evaluation frameworks, and translating complex AI capabilities into reliable, enterprise-grade automation systems.`,
   about: `My path started with a B.Sc. in Physics and Computer Science, and continued into an M.Sc. in Artificial Intelligence and Machine Learning — a combination that grounds my engineering in rigorous, first-principles thinking. Since then, I've focused on building autonomous agent systems and production LLM applications, translating research-grade techniques into reliable, enterprise-ready automation.`,
 };

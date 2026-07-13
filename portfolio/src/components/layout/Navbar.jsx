@@ -32,12 +32,26 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a
-          href={`mailto:${personal.email}`}
-          className="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-gray-900 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors hover:scale-105 active:scale-95 duration-300"
-        >
-          Get in touch
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href={personal.resumeUrl}
+            download
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-gray-900 text-sm font-medium rounded-full border border-gray-200 hover:bg-gray-50 transition-colors hover:scale-105 active:scale-95 duration-300"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 3v12" />
+              <path d="M7 10l5 5 5-5" />
+              <path d="M5 21h14" />
+            </svg>
+            Resume
+          </a>
+          <a
+            href={`mailto:${personal.email}`}
+            className="inline-flex items-center justify-center px-6 py-2.5 bg-gray-900 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors hover:scale-105 active:scale-95 duration-300"
+          >
+            Get in touch
+          </a>
+        </div>
 
         <button
           type="button"
@@ -75,9 +89,22 @@ export default function Navbar() {
                 </a>
               ))}
               <a
+                href={personal.resumeUrl}
+                download
+                onClick={() => setIsOpen(false)}
+                className="mt-4 inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-900 text-sm font-medium rounded-full border border-gray-200 hover:bg-gray-50 transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 3v12" />
+                  <path d="M7 10l5 5 5-5" />
+                  <path d="M5 21h14" />
+                </svg>
+                Resume
+              </a>
+              <a
                 href={`mailto:${personal.email}`}
                 onClick={() => setIsOpen(false)}
-                className="mt-4 inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors"
+                className="mt-2 inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors"
               >
                 Get in touch
               </a>
